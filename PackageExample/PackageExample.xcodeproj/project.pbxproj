@@ -11,6 +11,7 @@
 		F61240C3285FF8C900232F81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61240C2285FF8C900232F81 /* ContentView.swift */; };
 		F61240C5285FF8CB00232F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F61240C4285FF8CB00232F81 /* Assets.xcassets */; };
 		F61240C8285FF8CB00232F81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F61240C7285FF8CB00232F81 /* Preview Assets.xcassets */; };
+		F61240D0285FF91E00232F81 /* PackageTest in Frameworks */ = {isa = PBXBuildFile; productRef = F61240CF285FF91E00232F81 /* PackageTest */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F61240D0285FF91E00232F81 /* PackageTest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = PackageExample;
+			packageProductDependencies = (
+				F61240CF285FF91E00232F81 /* PackageTest */,
+			);
 			productName = PackageExample;
 			productReference = F61240BD285FF8C900232F81 /* PackageExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = F61240B4285FF8C900232F81;
+			packageReferences = (
+				F61240CE285FF91E00232F81 /* XCRemoteSwiftPackageReference "PackageTest" */,
+			);
 			productRefGroup = F61240BE285FF8C900232F81 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F61240CE285FF91E00232F81 /* XCRemoteSwiftPackageReference "PackageTest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mdorgham/PackageTest";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F61240CF285FF91E00232F81 /* PackageTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F61240CE285FF91E00232F81 /* XCRemoteSwiftPackageReference "PackageTest" */;
+			productName = PackageTest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F61240B5285FF8C900232F81 /* Project object */;
 }

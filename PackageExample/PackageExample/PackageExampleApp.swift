@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import PackageTest
 
 @main
 struct PackageExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EXPackageView()
         }
     }
 }
