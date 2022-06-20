@@ -8,15 +8,10 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-struct SwiftUIView: View {
-    var body: some View {
+public struct EXPackageView: View {
+    public init() {}
+    public var body: some View {
         Text("First Package Test! ")
     }
 }
 
-@available(iOS 13.0, *)
-struct SwiftUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        SwiftUIView()
-    }
-}
